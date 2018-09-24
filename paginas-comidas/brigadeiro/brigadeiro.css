@@ -1,0 +1,61 @@
+li {
+    text-align: center;
+    padding: 5%;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foto-usuario {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    border: 1px solid black;
+    background-size: cover;
+    background-position: center center; 
+}
+
+.main-vendedor {
+    height: 100%;
+}
+
+.elemento-vendedor {
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.vendedor {
+    height: 200px;
+}
+
+.texto-vendedor {
+    font-size: 40px;
+}
+
+.vendedor-nome {
+    font-size: 45px;
+}
+
+.list-group a {
+    text-decoration: none;
+    color: black;
+}
+
+.list-group p {
+    font-size: 18px;
+}
+
+.busca {
+    margin: 5%;
+    margin-bottom: 0;
+    
+}
+
+.busca li {
+    border: none ;
+}
+
+.busca .form-control {
+    height: 100px;
+}

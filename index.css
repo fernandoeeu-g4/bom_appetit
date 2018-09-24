@@ -1,0 +1,26 @@
+.menu-principal, .item-menu-principal {
+    margin-top: 5%;
+}
+
+.brigadeiro {
+    background-color: #c19191;
+    transition: 0.3s;
+}
+.brigadeiro:hover {
+    background-color: #ad8282;
+    
+}
+.brigadeiro:not(:hover) {
+    background-color: #c19191;
+}
+
+.lista-comidas a {
+    height: 200px;
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+.titulo {
+    font-size: 90px;
+}
