@@ -3,15 +3,31 @@
 }
 
 .brigadeiro {
-    background-color: #c19191;
+    background-color: #E36397;
     transition: 0.3s;
 }
+
+.brownie {
+    background-color: #BC8DA7;
+}
+
+.alfajor {
+    background-color: #BDB4BF;
+}
+
+.mini-pizza {
+    background-color: #D9D9D9;
+}
+
+.bolo-pote {
+    background-color: #EFF2EF;
+}
 .brigadeiro:hover {
-    background-color: #ad8282;
+    background-color: ;
     
 }
 .brigadeiro:not(:hover) {
-    background-color: #c19191;
+    background-color: ;
 }
 
 .lista-comidas a {
@@ -23,4 +39,15 @@
 
 .titulo {
     font-size: 90px;
+}
+
+.btn {
+    transition: 0.2s all ease;
+    padding: 30px 60px;
+    border: 1px solid black;
+    color: black;
+    font-family: ;
+    font-size: 50px;
+    display: inline-block;
+    width: 100%;
 }
