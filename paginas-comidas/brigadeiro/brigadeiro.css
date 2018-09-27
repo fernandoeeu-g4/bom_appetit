@@ -60,7 +60,6 @@ ul {
     padding: 0px 60px;
     
     color: black;
-    font-family: ;
     font-size: 50px;
     display: inline-block;
     width: 100%;
@@ -101,19 +100,24 @@ ul {
 
 /* Input */
 
-.stylish-input-group .input-group-addon{
-    background: white !important; 
-}
-.stylish-input-group .form-control{
-	border-right:0; 
-	box-shadow:0 0 0; 
-	border-color:#ccc;
-}
-.stylish-input-group button{
-    border:0;
-    background:transparent;
+.div-input * {
+    width: 93%;
 }
 
-.imaginary-container {
-    width: 500px !important;
+.input-query {
+    font-size: 200%;
+    background-color: none;
+    box-sizing: border-box;
+    appearance: none;
+    display: block;
+    height: 70px;
+    
+    border: 1px black solid;
+    padding: 10px 15px;
+    border-radius: 60px;
+    color: black;
+    font-weight: 100;
+    letter-spacing: 0.01em;
+    margin: 10%;
+    margin-bottom: 5%;
 }

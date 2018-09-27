@@ -22,13 +22,6 @@
 .bolo-pote {
     background-color: #EFF2EF;
 }
-.brigadeiro:hover {
-    background-color: ;
-    
-}
-.brigadeiro:not(:hover) {
-    background-color: ;
-}
 
 .lista-comidas a {
     height: 200px;
@@ -38,7 +31,8 @@
 }
 
 .titulo {
-    font-size: 90px;
+    font-size: 80px;
+    margin-bottom: 5%;
 }
 
 .btn {
@@ -46,7 +40,6 @@
     padding: 30px 60px;
     border: 1px solid black;
     color: black;
-    font-family: ;
     font-size: 50px;
     display: inline-block;
     width: 100%;

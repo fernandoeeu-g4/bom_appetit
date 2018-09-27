@@ -20,64 +20,77 @@
 <body>
 
     <div id="app">
-        <div class="row d-flex flex-column">
-            <div class="row">
-                <div class="d-flex flex-column bd-highlight col justify-content-center align-items-center header">
+        <div class="main-header">
+            <div class="d-flex flex-row header align-items-center">
+                <div class="col-5 wrapper-header">
+                    
                     <div class="p-2 bd-highlight foto-usuario"></div>
-                    <p class="nome-vendedor">{{nome}}</p>
 
                 </div>
+                <div class="col-7">
+                    <span class="nome-vendedor"><b>{{nome}}</b></span>
+                </div>
             </div>
+            <!--
+
+            
+            -->
+            
 
         </div>
-        <div row>
+        <div class="biografia">
             <div class="d-flex flex-column justify-content-center schedule">
-                
-                
+                <br>
+                <h4>Sobre mim</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                    Odio officia doloremque ut qui voluptatem in reiciendis error laborum. 
+                    Deleniti quo nam, mollitia animi ex ipsam excepturi a. Quae, explicabo consequatur.</p>
             </div>
         </div>
         <!--Brigadeiros-->
         <div class="d-flex flex-column brigadeiros justify-content-center">
-                <h3>Horários</h3>
-                <table class="table table-bordered tabela-horarios">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Segunda</th>
-                            <th scope="col">Terça</th>
-                            <th scope="col">Quarta</th>
-                            <th scope="col">Quinta</th>
-                            <th scope="col">Sexta</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>M</td>
-                            <td>9:00 até 11:00</td>
-                            <td>9:00 até 11:00</td>
-                            <td>10:00 até 12:00</td>
-                            <td>9:00 até 11:00</td>
-                            <td>8:00 até 11:00</td>
-                          </tr>
-                          <tr>
-                            <td>T</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                          </tr>
-                          <tr>
-                            <td>N</td>
-                            <td >x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                            <td>x</td>
-                          </tr>
-                        </tbody>
-                      </table>
-            <h3>Brigadeiros | R$1,00</h3>
+            <br>
+            <h4>Horários</h4>
+            <table class="table table-bordered tabela-horarios">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Segunda</th>
+                        <th scope="col">Terça</th>
+                        <th scope="col">Quarta</th>
+                        <th scope="col">Quinta</th>
+                        <th scope="col">Sexta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M</td>
+                        <td>9:00 até 11:00</td>
+                        <td>9:00 até 11:00</td>
+                        <td>10:00 até 12:00</td>
+                        <td>9:00 até 11:00</td>
+                        <td>8:00 até 11:00</td>
+                    </tr>
+                    <tr>
+                        <td>T</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                    <tr>
+                        <td>N</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                        <td>x</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h4>Brigadeiros | R$1,00</h4>
             <div class="d-flex flex-row justify-content-center">
                 <div class="tipo">
                     <select v-model="tipo_brigadeiro" class="form-control form-control-sm form-tipo-brigadeiro">
@@ -87,29 +100,34 @@
                 </div>
                 <div class="quantidade">
                     <select v-model="quantidade_brigadeiro" class="form-control form-control-sm form-quantidade-brigadeiro">
-                        <option value="nenhum">0</option>
-                        <option value="um">1</option>
-                        <option value="dois">2</option>
-                        <option value="tres">3</option>
-                        <option value="quatro">4</option>
-                        <option value="cinco ou mais">5 ou mais</option>
+                        <option value=1>1</option>
+                        <option value=2>2</option>
+                        <option value=3>3</option>
+                        <option value=4>4</option>
+                        <option value=5>5</option>
                     </select>
                 </div>
             </div>
+            <h4>Total</h4>
+            <p style="display: none">
+                    {{quantidade_brigadeiro}}
+                    {{valor_total = quantidade_brigadeiro * valor_brigadeiro}}
+
+            </p>
+            <p class="valor-total">R${{valor_total}}</p>
+            <br>
 
         </div>
         <div class="d-flex flex-row justify-content-center botao">
-                <a v-on:click="renderItem" v-bind:href="'https://api.whatsapp.com/send?phone=55091984346208&text='+mensagem_share+'.'">
-                    <button type="button" class="btn btn-light">
-                        Enviar pedido via WhatsApp
-                    </button>
-                </a>
-            </div>
-            <div>
-                <br><br><br>
-            </div>
+            <a v-on:click="renderItem" v-bind:href="'https://api.whatsapp.com/send?phone=55091984346208&text='+mensagem_share+'.'">
+                <button type="button" class="btn btn-light">
+                    Enviar pedido via WhatsApp
+                </button>
+            </a>
+            <br><br><br>
+        </div>
     </div>
-    
+
     <script src="Joana.js"></script>
 
 </body>
